@@ -10,11 +10,26 @@ createRoot(document.getElementById('root')).render(
 
 function Page(){
     return (
-        <Fragment>
-            <header>
-                <img src="public/imgs/images.png" alt="React logo" width= {40} />
-            </header>
-            
+        <>
+            <Header/>
+            <MainComponent/>
+            <Footer/>
+        </>
+        
+    )
+}
+
+function Header(){
+    return (
+        <header>
+            <img src="public/imgs/images.png" alt="React logo" width= {40} />
+        </header>
+    )
+}
+
+function MainComponent(){
+    return (
+        <main>
             <h1>Fun facts about React!</h1>
             <ol>
                 <li>Has well over 200K stars on GitHub</li>
@@ -24,8 +39,14 @@ function Page(){
                 <li>I like meta so much</li>
 
             </ol>
-            <footer><small>© 20xx Emelyne development. All rights reserved.</small></footer>
-        </Fragment>
-        
+        </main>
+    )
+}
+
+function Footer(){
+    return (
+        <footer>
+            <small>© 20xx Emelyne development. All rights reserved.</small>
+        </footer>
     )
 }
