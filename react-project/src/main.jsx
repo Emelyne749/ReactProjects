@@ -1,7 +1,5 @@
 import {createRoot} from 'react-dom/client'
-import Header from './Header'
-import Footer from './Footer'
-import MainComponent from './MainComponent'
+import Page from './Page'
 
 createRoot(document.getElementById('root')).render(
     <>
@@ -10,14 +8,4 @@ createRoot(document.getElementById('root')).render(
     
 )
 
-function Page(){
-    return (
-        <>
-            <Header/>
-            <MainComponent/>
-            <Footer/>
-        </>
-        
-    )
-}
 
