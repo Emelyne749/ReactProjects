@@ -2,35 +2,29 @@ import {createRoot} from 'react-dom/client'
 
 createRoot(document.getElementById('root')).render(
     <>
-    <TemporaryName/>
     <Page/>
     </>
     
 )
 
-function TemporaryName(){
-    return(
-        <main>
-            <img src="public/imgs/images.png" alt="React logo" width= {40} />
-            <h1>Fun facts about React! </h1>
-            <ul>
-                <li>Was first release in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 200K stars on GitHub</li>
-                <li>Is maintained by Meta</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul>
-        </main>
-    )
-}
-
-
 function Page(){
     return (
-        <ol>
-            <li>Rendering pages</li>
-            <li>cool images</li>
-            <li>amaizing CV</li>
-        </ol>
+        <main>
+            <header>
+                <img src="public/imgs/images.png" alt="React logo" width= {40} />
+            </header>
+            
+            <h1>Fun facts about React!</h1>
+            <ol>
+                <li>Has well over 200K stars on GitHub</li>
+                <li>Powers thousands of enterprise apps, including mobile apps</li>
+                <li>Its my favourite</li>
+                <li>Good on CV</li>
+                <li>I like meta so much</li>
+
+            </ol>
+            <footer><small>© 20xx Emelyne development. All rights reserved.</small></footer>
+        </main>
+        
     )
 }
