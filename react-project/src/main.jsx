@@ -1,4 +1,5 @@
 import {createRoot} from 'react-dom/client'
+import { Fragment } from 'react'
 
 createRoot(document.getElementById('root')).render(
     <>
@@ -9,7 +10,7 @@ createRoot(document.getElementById('root')).render(
 
 function Page(){
     return (
-        <main>
+        <Fragment>
             <header>
                 <img src="public/imgs/images.png" alt="React logo" width= {40} />
             </header>
@@ -24,7 +25,7 @@ function Page(){
 
             </ol>
             <footer><small>© 20xx Emelyne development. All rights reserved.</small></footer>
-        </main>
+        </Fragment>
         
     )
 }
