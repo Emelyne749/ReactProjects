@@ -1,9 +1,14 @@
+import Main from "./components/Main"
+import NavBar from "./components/navBar"
+
 export default function App() {
   return (
-    <div className="min-h-screen bg-purple-600 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-white">
-        Tailwind v4 is working 🚀
-      </h1>
-    </div>
+      <>
+      <div class="w-2xs h-120 bg-gray-400">
+        <NavBar/> 
+        <Main/>
+      </div>
+
+      </>
   )
 }
