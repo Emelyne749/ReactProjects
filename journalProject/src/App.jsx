@@ -6,6 +6,7 @@ import data from "../src/assets/data"
 export default function App() {
   let Entries = data.map((d)=>{
     return <Entry 
+    key = {d.id}
     img={d.img} 
     title={d.title} 
     country={d.country} 
