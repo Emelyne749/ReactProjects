@@ -1,7 +1,7 @@
 
 import Header from "./components/Header"
 import Entry from "./components/Entry"
-import data from "../src/assets/data"
+import data from "./data.js"
 
 export default function App() {
   let Entries = data.map((d)=>{
